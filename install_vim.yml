@@ -1,5 +1,7 @@
 ---
-- name: Update repo and install vim
-  apt:
-    name: vim
-    update_cache: yes
+- hosts: 192.168.205.12
+  tasks:
+    - name: Update repo and install vim
+      apt:
+        name: vim
+        update_cache: yes
