@@ -1,7 +1,6 @@
 ---
-- hosts: ansible.local
-  tasks:
-    - name: Update repo and install vim
-      apt:
-        name: vim
-        update_cache: yes
+tasks:
+  - name: Update repo and install vim
+    apt:
+      name: vim
+      update_cache: yes
