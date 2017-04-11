@@ -1,5 +1,5 @@
 ---
-- hosts: jenkins.local
+- hosts: ansible.local
   tasks:
     - name: Update repo and install vim
       apt:
