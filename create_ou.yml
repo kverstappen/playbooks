@@ -1,6 +1,7 @@
 ---
 - hosts: 192.168.205.12
   tasks:
-    ldap_entry:
-      dn: ou=users,dc=local
-      objectClass: organizationalUnit
+    - name: Create an OU inside the LDAP instance.
+      ldap_entry:
+        dn: ou=users,dc=local
+        objectClass: organizationalUnit
